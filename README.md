@@ -16,6 +16,13 @@ An AI-powered news article classification web app built with Flask and Groq's LL
 
 ---
 
+## Live Demo
+🔗 [https://newsclassifier-759q.onrender.com](https://newsclassifier-759q.onrender.com)
+
+> ⚠️ Hosted on Render free tier — may take 30-60 seconds to wake up on first visit.
+
+---
+
 ## Features
 - Paste any news article and get instant AI-powered classification
 - Identifies category with confidence level (High/Medium/Low)
@@ -29,6 +36,7 @@ An AI-powered news article classification web app built with Flask and Groq's LL
 - **Flask** — Web framework
 - **Groq LLaMA 3.3 70B** — AI classification model (free tier)
 - **LangChain** — LLM orchestration
+- **Render** — Cloud deployment
 - **Docker** — Containerized deployment
 - **Gunicorn** — Production WSGI server
 
@@ -81,27 +89,25 @@ An AI-powered news article classification web app built with Flask and Groq's LL
 
 5. Open [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
-### Docker
-```bash
-docker build -t newsclassifier .
-docker run -p 7860:7860 -e GROQ_API_KEY=your_key newsclassifier
-```
+### Deploy on Render
+1. Fork this repository
+2. Go to [render.com](https://render.com) → New → Web Service
+3. Connect your GitHub repo
+4. Select **Docker** as runtime
+5. Add environment variable: `GROQ_API_KEY=your_key`
+6. Click **Create Web Service**
 
 ---
 
 ## Usage
-1. Paste any news article into the text box
-2. Click **"Classify Article"**
-3. View the result:
+1. Open the app at [https://newsclassifier-759q.onrender.com](https://newsclassifier-759q.onrender.com)
+2. Paste any news article into the text box
+3. Click **"Classify Article"**
+4. View the result:
    - **Category** — the news topic
    - **Confidence** — High / Medium / Low
    - **Reason** — why it was classified that way
    - **Keywords** — top 3 keywords from the article
-
----
-
-## Live Demo
-🔗 [https://huggingface.co/spaces/dhrubak2004/NewsClassifier](https://huggingface.co/spaces/dhrubak2004/NewsClassifier)
 
 ---
 
