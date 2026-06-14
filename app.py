@@ -8,7 +8,9 @@ from langchain_core.output_parsers import StrOutputParser
 app = Flask(__name__)
 load_dotenv()
 
-os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
+groq_key = os.getenv("GROQ_API_KEY")
+if groq_key:
+    os.environ["GROQ_API_KEY"] = groq_key
 
 model = ChatGroq(temperature=0, model="llama-3.3-70b-versatile")
 
