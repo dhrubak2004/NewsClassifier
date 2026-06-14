@@ -2,7 +2,7 @@
 
 An AI-powered news article classification web app built with Flask and Groq's LLaMA 3.3 70B model.
 
-![News Classifier](https://newsclassifier-759q.onrender.com)
+![News Classifier](Screenshot%202026-06-14%20235908.png)
 
 ---
 
@@ -81,6 +81,12 @@ An AI-powered news article classification web app built with Flask and Groq's LL
 
 5. Open [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
+### Docker
+```bash
+docker build -t newsclassifier .
+docker run -p 7860:7860 -e GROQ_API_KEY=your_key newsclassifier
+```
+
 ---
 
 ## Usage
@@ -95,7 +101,7 @@ An AI-powered news article classification web app built with Flask and Groq's LL
 ---
 
 ## Live Demo
-🔗 [https://newsclassifier-759q.onrender.com](https://newsclassifier-759q.onrender.com)
+🔗 [https://huggingface.co/spaces/dhrubak2004/NewsClassifier](https://huggingface.co/spaces/dhrubak2004/NewsClassifier)
 
 ---
 
