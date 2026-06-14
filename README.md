@@ -2,7 +2,7 @@
 
 An AI-powered news article classification web app built with Flask and Groq's LLaMA 3.3 70B model.
 
-![News Classifier](Screenshot%202026-06-14%20235908.png)
+![News Classifier](uploads/Screenshot 2026-06-14 235908.png)
 
 ---
 
